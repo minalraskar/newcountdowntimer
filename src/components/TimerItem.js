@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
-function TimerListItem({ timer, index, deleteTimer }) {
+function TimerItem({ timer, index, deleteTimer }) {
   const { startTime, remainingTime } = timer;
   const remainingSeconds = Math.floor(remainingTime / 1000);
 
@@ -47,4 +47,4 @@ const bull = (
   );
 }
 
-export default TimerListItem;
+export default TimerItem;

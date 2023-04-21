@@ -1,5 +1,5 @@
 import React from "react";
-import TimerListItem from "./TimerListItem";
+import TimerListItem from "./TimerItem";
 
 function TimerList({ timers, deleteTimer }) {
   return (

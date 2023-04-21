@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TimerList from "./components/TimerList";
-import NewTimerForm from "./components/NewTimerForm";
+import NewTimerForm from "./components/AddTimer";
 import "./App.css";
 
 

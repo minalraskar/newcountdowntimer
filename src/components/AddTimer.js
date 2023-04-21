@@ -6,7 +6,7 @@ import { Button, Input } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import { lightBlue } from "@mui/material/colors";
 
-function NewTimerForm({ addTimer }) {
+function AddTimer({ addTimer }) {
   const [seconds, setSeconds] = useState("");
 
   const handleSubmit = (event) => {
@@ -26,12 +26,7 @@ function NewTimerForm({ addTimer }) {
   return (
     <div className="new-timer-form">
       <Card sx={{
-        ".MuiCard-paper": {
-          width: "18%",
-          boxSizing: "border-box",
-          bgcolor: lightBlue[400],
-          color: "#fff"
-        }, maxWidth: 250
+       maxWidth: 250
       }}>
         <h2 style={{ display: "flex", alignContent: "center", justifyContent: "center" }}>New Timer</h2>
         <form onSubmit={handleSubmit}>
@@ -60,4 +55,4 @@ function NewTimerForm({ addTimer }) {
   );
 }
 
-export default NewTimerForm;
+export default AddTimer;
